@@ -34,4 +34,7 @@ window.onload = function(){
         var pageId = $(this).attr("data-page");
         $("html, body").animate({ scrollTop: $("#"+pageId).offset() }, 1000);
     });
-}  
+}
+
+
+

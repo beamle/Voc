@@ -16,11 +16,9 @@
 body{
     overflow-x: hidden;
 }
-
 html{
     font-family: "Kulim Park", sans-serif;
-    font-weight: normal;
-
+    font-weight: lighter;
     font-size:10px;
     box-sizing:border-box;
     scroll-behavior: smooth;
@@ -50,7 +48,7 @@ section{
 
 header{
     width: 100%;
-    height: 5rem;
+    height: 4rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -130,7 +128,7 @@ nav{
     width: 100%;
     height: 90vh;
     background: linear-gradient(130deg, rgba(49,24,131,0.9) 0%, rgba(140,148,190,0.8)
-    1000%), url("images/123.jpg") center no-repeat fixed;
+    80%), url("images/newborn.jpg") center no-repeat fixed;
     background-size:cover;
     position: relative;
 
@@ -143,31 +141,47 @@ nav{
     bottom: -3px;
     width: 100%;
     height: 4.7rem;
-    background: url("images/wave-large.png") center no-repeat;
     background-size: cover;
+}
+
+
+.dollars{
+    font-size: 41px;
 }
 
 .main-message{
     width: 100%;
-    color: #F5FFFA;
+    color: #f5f5f5;
     text-transform: none;
     transform: translateY(20%);
     text-align: center;
-    max-width: 574px;
+    max-width: 802px;
+    margin-left: 95px;
+    margin-top: 230px;
 }
 
 .main-message h1{
     font-family: "Kulim Park", sans-serif;
     letter-spacing: 1px;
     font-size: 4rem;
-    margin: 1rem 0;
-    font-weight: normal;
+    font-weight: lighter;
+    margin-top: -100px;
+    margin-left: -34px;
 }
 
-.main-message p{
+.main-message h2{
     height: 100px;
-    font-size: 20px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2;
     text-transform: none;
+    /* max-width: 669px; */
+    /* margin: 0 0 0 0; */
+    margin-left: -95px;
+    margin-top: 30px;
+    font-weight: lighter;
+    max-width:890px;
+
 }
 
 
@@ -175,48 +189,54 @@ nav{
 
 /*Features*/
 .Features{
-    padding: 5rem;
     z-index: 9;
     position: relative;
+    height: 106vh;
 
 }
 
+.bigger{
+    font-size: 51px;
+}
+/*
 .imagegirl{
     width: 100%;
-    height: 44%;
+    height: 43%;
     background-image: url(images/girl3.png);
     background-repeat: no-repeat;
-    top: 210px;
+    top: 228px;
     position: absolute;
     right: -114rem;
     z-index: -3;
 
 }
 
-@media only screen and (max-width: 1000px) {
-    .imagegirl {
-        display: none;
-    }
-}
+ */
 
 .title-heading{
     text-align:center;
-    text-transform: lowercase;
+    text-transform: none;
     margin-bottom: 10rem;
     color: rgba(0,0,0,.7);
+
 }
 
 .title-heading h1 {
     font-family: "Kulim Park", sans-serif;
-    font-weight: normal;
+    font-weight: lighter;
     margin: 1rem 1rem;
     padding-bottom: 20px;
+    color: #0a0a0a;
 
 }
 
 .title-heading p{
     text-transform: none;
-    font-size: 2rem;
+    font-size: 22px;
+    font-family: "Kulim Park", sans-serif;
+    margin: 41px 0;
+
+
 }
 
 .activities-grid{
@@ -235,14 +255,10 @@ nav{
     justify-content: flex-start;
     cursor: pointer;
     z-index: 9;
-    transition: .4s;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.activities-grid-item:hover {
-    box-shadow: 5px 5px 5px 4px #34495e;
-}
 
 
 .activities-grid-item::before{
@@ -252,8 +268,8 @@ nav{
     left: 0;
     width: 100%;
     height: 100%;
-   background-image: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(120,148,190,0.8)
-    100%);
+   background-image: linear-gradient(163deg, rgba(49,32,135,0.5) 0%, rgba(120,148,190,0.8)
+   100%);
     z-index: -1;
 }
 
@@ -282,7 +298,7 @@ nav{
 }
 .activities-grid-item p{
     text-align: center;
-    font-size: 17px;
+    font-size: 21px;
 }
 
 /*testimonials TEAM*/
@@ -290,7 +306,7 @@ nav{
     width: 100%;
     height: 90vh;
     background: linear-gradient(130deg, rgba(49,24,131,0.9) 0%, rgba(140,148,190,0.8)
-    100%), url("images/123.jpg") center no-repeat fixed;
+    50%), url("images/hands.png") center no-repeat fixed;
     background-size: cover;
     position: relative;
 }
@@ -302,9 +318,9 @@ nav{
     left: 0;
     width: 100%;
     height: 4.7rem;
-    background: url("images/wave-small-reversed.png") center no-repeat;
     background-size: cover;
 }
+
 
 /* FADE IN*/
 .members-container{
@@ -312,13 +328,20 @@ nav{
     position: relative;
     height: 200px;
     z-index: 9;
-    margin-top: 30%;
+    margin-top: 6%;
+}
+
+.members-container h1{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin:40px;
 }
 
 .person-container{
     width: 101%;
     height: 200px;
-    margin: auto;
+    margin: 77px 0 0 0;
 }
 /*
 .testimonial-text-box{
@@ -354,10 +377,11 @@ nav{
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    border-radius: 50%;
 }
 
 .middle {
-    transition: .5s ease;
+    transition: .8s ease;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -367,21 +391,29 @@ nav{
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: #34495e;
+    background-color: #00e698;
+    border-radius: 50%;
+}
+
+.middle p{
+    font-size: 15px;
 }
 
 .person:hover .image {
-    opacity: 0.3;
+    opacity: 0.5;
 }
   
 .person:hover .middle {
-    opacity: 0.9;
+    opacity: 0.8;
 }
   
 .text {
-    color: white;
-    font-size: 16px;
+    color: black;
+    font-size: 22px;
     padding: 16px 32px;
+    font-family: "Kulim Park", sans-serif;
+    margin-top: 20px;
+    line-height: 1.4;
 }
 .subtext {
     background-color: #4CAF50;
@@ -390,87 +422,6 @@ nav{
     padding: 16px 32px;
 }
 
-/*.person .text{
-    width: 15rem;
-    height: 15rem;
-    background-color: #7FFFD4;
-    opacity: 0;
-    transition: 0.3s ease;
-
-}
-.text p{
-    transform: translate(-50%, -50%);
-    position: absolute;
-    display: inline-block;
-    margin: 34rem;
-}
-
-.person .text:hover{
-    opacity: 1;
-    cursor: pointer;
-    width: 130px;
-    height: 140px;
-    border-radius: 50%;
-
-}*/
-
-/*---------------Marju-------------
-
-.text{
-    width: 13rem;
-    height: 14rem;
-    background-color: #7FFFD4;
-    opacity: 0;
-    transition: 0.4s ease;
-}
-
-.text p{
-    display:block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-.text:hover{
-    opacity: 1;
-    cursor: pointer;
-}
-
-/*Fade in END*/
-
-
-
-
-
-/* NII OLI VAREM
-.tutvustus{
-    width:600px;
-    margin: auto;
-    font-size: 20px;
-    color: white;
-    text-align: justify;
-    position: center;
-}
-
-.inimene{
-    height:0;
-    overflow: hidden;
-}
-
-.tutvustus:target{
-    height: auto;
-}
-
-.name{
-    display: block;
-    margin-bottom: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 22px;
-}
-
- */
 
 
 
@@ -533,30 +484,29 @@ footer section p {
     padding: 80px;
 }
 /*media queries*/
-@media screen and(min-width: 470px){
+@media screen and (min-width: 470px){
     .main-message{
         transform: translateY(40%);
     }
+
 }
 
 
 @media screen and (min-width: 470px) {
     .hero::before{
         height: 9.4rem;
-        background: url("images/wave-medium.png");
         background-size: cover;
     }
 
     .testimonials::before{
         height: 9.4rem;
-        background: url("images/wave-medium-reversed.png");
         background-size: cover;
     }
 }
 
 @media screen and (min-width: 700px){
     header{
-        height: 8rem;
+        height: 80rem;
     }
 
     .nav-brand{
@@ -624,27 +574,25 @@ footer section p {
     }
 
     .title-heading h1{
-        font-size: 3.7rem;
+        font-size: 3.8rem;
     }
 }
 
 @media screen and (min-width: 950px){
     .hero::before{
         height: 22.7rem;
-        background: url("images/wave-large.png");
-        background-size:cover;
+        background-size: cover;
     }
 
     .testimonials::before{
         height:22.7rem;
-        background: url("images/wave-large-reversed.png");
         background-size:cover;
     }
 }
 
 @media screen and (min-width: 1200px){
     .hero{
-        height: 75vh;
+        height: 80vh;
     }
 }
 
@@ -679,14 +627,14 @@ footer section p {
     box-sizing: border-box;
     margin: 16px 0;
     border: 0;
-    background: #b9ceeb;
+    background: #6da6f5;
     padding: 20px 40px;
     outline: none;
     color: #111;
     transition: 0.5s;
 }
 .contact-form-text:hover{
-    box-shadow: 0 0 10px 4px #34495e;
+    box-shadow: 0 0 5px 2px #34495e;
 }
 textarea.contact-form-text{
     resize: none;
@@ -696,7 +644,7 @@ textarea.contact-form-text{
 .contact-form-btn{
     float:right;
     border:0;
-    background: aquamarine;
+    background: #03DAc6;
     color: #111;
     padding: 1rem 3.5rem;
     border-radius: 20px;
@@ -706,14 +654,47 @@ textarea.contact-form-text{
 }
 
 .contact-form-btn:hover{
-    background: #00fa7d;
+    background: #33ffba;
 }
 
 .VocDec-Providing {
     padding: 10rem;
     z-index: 9;
     position: relative;
+}
 
+.loading{
+    margin-left: 422px;
+}
+
+.loading span{
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0 0;
+    background-color: darkgrey;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.loading span:nth-child(2){
+    background-color: darkgrey;
+    animation-delay: 0.4s;
+}
+
+.loading span:nth-child(3){
+    background-color: darkgrey;
+    animation-delay: 0.8s;
+}
+
+@keyframes dots{
+    50%{
+        opacity:0;
+        transform: scale(0.7) translateY(10px);
+    }
 
 }
 
@@ -726,8 +707,8 @@ textarea.contact-form-text{
         letter-spacing: 3px;
     }
     50%{
-                 opacity: 1; */
-                 font-size: 12px; */
+         opacity: 1;
+         font-size: 12px;
         /* 				font-weight:600; */
         /* 				filter: blur(0); */
     }
@@ -741,10 +722,108 @@ textarea.contact-form-text{
     margin: auto;
     width: 350px;
     font-size: 25px;
-    font-family: Helvetica, sans-serif, Arial;
-    animation: load 1.2s infinite 0s ease-in-out;
-    animation-direction: alternate;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: lighter;
     text-shadow: 0 0 1px white;
     text-transform: none;
+    margin-top: 122px;
+}
+
+
+.testimonial{
+    text-align: center;
+    margin: 20px 30px 40px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: lighter;
+
+ }
+.testimonial .pic{
+    display: block;
+    margin-left: 40%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px #00e6d2;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.1), 0 4px #03DAC6;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.testimonial .pic img{
+    margin: 8px;
+    margin-left: 5px;
+    width: 92%;
+    height: auto;
+}
+
+
+
+.testimonial .description{
+    padding: 65px 20px 40px;
+    font-size: 18px;
+    color: #50535f;
+    line-height: 30px;
+    border-radius: 25px;
+    border-bottom: 4px solid #03DAC6;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.1), 0 5px #92ffda;
+    margin-bottom: 25px;
+}
+
+/*
+.testimonial .title{
+    display: block;
+    margin: 0 0 7px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #6b2014;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.testimonial .post{
+    display: block;
+    font-size: 15px;
+    color: #e4ac01;
+    text-transform: capitalize;
+}
+/*
+.owl-theme .owl-controls{ margin-top: 0; }
+.owl-theme .owl-controls .owl-page span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #6b2014;
+    opacity: 0.8;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.45);
+    transition: all 0.3s ease 0s;
+}
+ */
+.owl-theme .owl-controls .owl-page.active span{ background: #e4ac01; }
+@media only screen and (max-width: 479px){
+    .testimonial{ padding: 20px 15px 40px; }
+    .testimonial .description{ padding: 0 5px 20px; }
+}
+.row {
+    z-index: 9;
+    position: relative;
+}
+
+.row h1{
+    margin-top: 30px;
+    font-size: 43px;
+    text-align: center;
+    color:#0a0a0a;
+    margin-bottom: 50px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: lighter;
+
+}
+
+.row h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #0a0a0a;
+    margin-top: 54px;
+    margin-left: -25px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: lighter;
 }
 
