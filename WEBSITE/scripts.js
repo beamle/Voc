@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function () {
     //function expression to select elements
     const selectElement = (s) => document.querySelector(s);
 
@@ -21,20 +21,35 @@ window.onload = function(){
         $(".tutvustus > .inimene#" + curId).css({height: "100%", overflow: "visible"});
         prevId = ".tutvustus > .inimene#" + curId;
     });
-
-    /*$('html').click(function(e) {                    
+*/
+    $('html').click(function (e) {
         console.log(e.target);
-        if(e.target !== $("img"))
-        {
-            $(prevId).css({height: "0", overflow: "hidden"});                
+        if (e.target !== $("img")) {
+            $(prevId).css({height: "0", overflow: "hidden"});
         }
-     }); */
-
-    $("a").click(function() {
-        var pageId = $(this).attr("data-page");
-        $("html, body").animate({ scrollTop: $("#"+pageId).offset() }, 1000);
     });
+
+    $("form.contact-form").submit(function (e) {
+
+        e.preventDefault();
+
+        var form = $(this);
+        var url = form.attr('action');
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: form.serialize(),
+            success: function (data) {
+                alert('Your message has been successfuly sent');
+            }
+        });
+    });
+
+
+    $("a").click(function () {
+        var pageId = $(this).attr("data-page");
+        $("html, body").animate({scrollTop: $("#" + pageId).offset()}, 1000);
+    });
+
 }
-
-
-
